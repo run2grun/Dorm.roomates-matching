@@ -1,0 +1,60 @@
+{% if error %}
+{{error}}
+<br><br>
+{% endif %}
+<head>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/homestyle.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Sunflower:300,500,700&display=swap&subset=korean" rel="stylesheet">
+    <body>
+    {% load staticfiles %}
+        <form method="POST" action="{% url 'login' %}">
+            {%csrf_token%}
+            <div class="wrapper">
+                <div class="box1">
+                    <h1><strong>POD</strong></h1>
+                    <p><i>Peace of Dormitory</i></p>
+                    <h2>경북대학교 교내 기숙사</h2>
+                    <h2>룸메이트 매칭 서비스</h2>
+                    <img src="{% static 'image/beans.png' %}" alt="">
+                </div>
+                <div class="box2">
+                    <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">ID</label>
+                        <input type="text" name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ID">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">PW</label>
+                        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <a href="{% url 'login' %}"><button type="submit" class="btn btn-primary">LOGIN</button></a>
+                    <a href="{% url 'tosignup' %}"><button type="button" class="btn btn-primary">SIGNUP</button></a>
+                </form>
+            </div>
+        </div>
+    </form>
+</body>
+
+<!-- {% if error %}
+{{error}}
+<br><br>
+{% endif %}
+
+<h1>Login</h1>
+
+<form method="POST" action="{% url 'login' %}">
+    {%csrf_token%}
+    Username:
+    <br>
+    <input name="username" type="text">
+    <br>
+    Password:
+    <br>
+    <input name="password" type="password">
+    <br><br>
+    <input class="btn btn-primary" type="submit" value="LOGIN">
+</form>
+회원가입페이지로 연결하기
+<a href="{% url 'tosignup' %}"><button type="button" class="btn btn-primary">SIGN UP</button></a> -->

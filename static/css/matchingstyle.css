@@ -1,0 +1,49 @@
+@font-face{
+    font-family: 'S-CoreDream-3Light'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #8CB27F;
+
+}
+.container{
+    background-color: #8CB27F;
+}
+
+.navbar{
+    background-color: #8CB27F;
+}
+
+.navbar-brand{
+    color: black;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.nav-link{
+    color: black;
+    font-size: 25px;
+    letter-spacing: 0px;
+    padding: .1rem 3rem;
+    font-family: 'S-CoreDream-3Light'
+}
+
+.card-text{
+    font-family: 'S-CoreDream-3Light';
+}
+
+.form-control{
+    font-family: 'S-CoreDream-3Light';
+    background-color: #8CB27F;
+}
+
+.form-group{
+    background-color: #8CB27F;
+}
+
+.btn{
+    font-family: 'S-CoreDream-3Light'
+}

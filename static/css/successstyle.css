@@ -1,0 +1,23 @@
+/* html 파일 맨 위에 !Doctype html 하고 
+head나 header 만들어서 그 안에 아래 CSS들 넣으세여
+대괄호 % load staticfiles % 대괄호
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="대괄호 % static 'css/successstyle.css' %}">  <- CSS 파일이랑 폴더 넣으세여 */
+
+@font-face{
+    font-family: 'S-CoreDream-3Light'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    
+body {
+    margin: 0;
+    font-family: 'S-CoreDream-3Light'; 
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #8CB27F;
+}

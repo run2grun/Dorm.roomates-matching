@@ -1,0 +1,61 @@
+@font-face { 
+    font-family: 'GyeonggiTitleM'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+body {
+    margin: 0;
+    font-family: 'GyeonggiTitleM'; 
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #295651;
+    text-align: center;
+    background-color: #8cb27f;
+    overflow: hidden;
+}
+.body.h1{
+    font-family: 'GyeonggiTitleM'; 
+    text-align: center;
+}
+.body.h2{
+    font-family: 'GyeonggiTitleM'; 
+    text-align: center;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+    width: 300px;
+    border:0px;
+}
+.form-control {
+    display: block;
+    width: 200px;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Sunflower', sans-serif;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin: auto;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 800px 400px;
+    grid-template-rows: 800px;
+}
+.box1{
+    margin-top: 10%;
+    margin-bottom: 30%;
+}
+.box2 {
+    margin-top: 50%;
+    margin-bottom: 30%;
+}

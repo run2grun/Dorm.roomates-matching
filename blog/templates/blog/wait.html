@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    {% load staticfiles %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>main</title>
+    <link rel="stylesheet" href="{% static 'css/mainstyle.css' %}">
+</header>
+
+<top>
+    <div class="container">
+        <div class="container-fluid">
+                <nav class="navbar justify-content-center">
+                    <a class="navbar-brand" href="{% url 'main' %}">POD</a>
+                </nav>
+        </div>
+        <div class="container">
+            <ul class="nav justify-content-between">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'intro' %}">기숙사소개</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'tosurvey' %}">룸메찾기</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'tomypage' %}">마이페이지</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'logout' %}">로그아웃</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+            </ul>
+            <hr>
+</top>
+
+<body>
+    <h1>조금만 더 기다려주세요. 잠시 후 매칭에 접속해주세요.</h1>
+   
+    
+</body>

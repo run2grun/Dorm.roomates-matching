@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        {% load staticfiles %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>intro</title>
+        <link rel="stylesheet" href="{% static 'css/introstyle_gsg.css' %}">
+    </head>
+
+<top>
+    <div class="container">
+        <div class="container-fluid">
+                <nav class="navbar justify-content-center">
+                    <a class="navbar-brand" href="{% url 'main' %}">POD</a>
+                </nav>
+        </div>
+        <div class="container">
+            <ul class="nav justify-content-between">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'intro' %}">기숙사소개</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'tosurvey' %}">룸메찾기</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'tomypage' %}">마이페이지</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'logout' %}">로그아웃</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+            </ul>
+            <hr>
+</top>
+
+<body>
+    {% if user.is_authenticated %}
+        {% for profile in profiles.all %}
+            {% if profile.user.id == user.id %}
+                <form  method="POST" action="{% url 'mypage' profile.id %}">
+                    {% csrf_token %}
+                    <div class="container">
+                            <div class="card-body">
+                                <div class="container">
+                                    <div class="form-group">
+                                        <br>
+                                        <br>
+                                        <label for="exampleFormControlSelect1">이름</label>
+                                        <input type="text" class="form-control" placeholder={{profile.user.username}}>
+                                        <br>
+                                        <label for="exampleFormControlSelect1">학번</label>
+                                        <input type="integer" class="form-control" placeholder={{profile.user_num}}>
+                                        <br>
+                                        <label for="exampleFormControlSelect1">전화번호</label>
+                                        <input type="integer" class="form-control" placeholder={{profile.user_hp}}>
+                                        <br>
+                                        <label for="exampleFormControlSelect1">한줄PR</label>
+                                        <input name="user_pr" type="text" class="form-control" placeholder={{profile.user_pr}}>
+                                        <br>
+                                        <label for="exampleFormControlSelect1">비밀번호수정</label>
+                                        <input name="user_pw" type="hidden" value={{profile.user.password}}>
+                                        <input name="user_pw" type="password" class="form-control" placeholder="비밀번호수정">
+                                        <br>
+                                        <a href="{% url 'main'%}" class="button buttonsubmit">확인</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                </form> 
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+</body>
+
+</html>

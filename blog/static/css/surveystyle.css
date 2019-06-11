@@ -1,0 +1,184 @@
+@font-face{
+    font-family: 'S-CoreDream-3Light'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.form-group{
+    background-color: #8CB27F;
+}
+body{
+    background-color: #8CB27F;
+}
+
+.container{
+    background-color: #8CB27F;
+}
+
+.navbar{
+    background-color: #8CB27F;
+}
+
+.navbar-brand{
+    color: black;
+    font-size: 45px!important;
+    font-weight: 800;
+}
+
+.nav-link{
+    color: black;
+    font-size: 25px;
+    letter-spacing: 0px;
+    padding: .1rem 3rem;
+    font-family: 'S-CoreDream-3Light'
+}
+
+.card-text{
+    font-family: 'S-CoreDream-3Light';
+    
+}
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #8CB27F;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125); 
+    border-radius: .25rem;
+    margin-top: 20px;
+    padding: 0px;
+}
+
+.card_1 {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #e8e6ea;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125); 
+    border-radius: .25rem;
+}
+
+.card_2 {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #e8e6ea;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125); 
+    border-radius: .25rem;
+}
+
+/*.form-check{
+    width: 300px;
+}*/
+.card-body h5{
+    display: block;
+    font-size: 2.4em;
+    margin-block-start: 3em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: 'S-CoreDream-3Light';
+    background-color: #55725d;
+    width: 250px;
+    border: 5px solid #55725d;
+    margin: 20px;
+}
+
+h6{
+    font-family: 'S-CoreDream-3Light'; 
+}
+.form-check-input{
+    float: middle;
+}
+h5 {
+    font-size: 0.8em;
+    margin-block-start: 3em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: 'S-CoreDream-3Light';
+    display: block;
+    background-color: #55725d;
+    width: 180px;
+    border: 5px solid #55725d;
+    margin-top: 20px !important;
+    margin-left: 20px;
+}
+
+p{
+    font-family: 'S-CoreDream-3Light';
+    font-size: 1em;
+    margin-left: 20px;
+}
+
+.grid-table{
+    display: grid;
+    grid-column: auto auto auto;
+    background-color: #e8e6ea;
+
+}
+.dorm-choice{
+    display: grid;
+    width: 60%;
+    margin-left: 50px;
+    margin-right: 0px;
+    grid-area: 1 / 1 / 2 / 2;
+}
+.table {
+    border-collapse: collapse;
+    width: 80% !important;
+    color: #212529;
+    grid-area: 1 / 2 / 2 / 4;
+    position: absolute;
+    right: 20px;
+}
+
+th, td {
+    font-family: 'S-CoreDream-3Light';
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    width: 80%;
+    font-size: 0.8rem;
+}
+.table td, .table th {
+    padding: 2rem;
+    vertical-align: center;
+    border-top: 1px solid #dee2e6;
+    text-align: left;
+    align-content: flex-end;
+    width: 400px;
+}
+
+.card-body-top{
+    font-family: 'S-CoreDream-3Light';
+}
+
+.card-body-top h5{
+    font-size: 25px;
+    color: #e8e6ea;
+}
+
+.btn_submit{
+    background-color: #295651;
+    font-family: 'S-CoreDream-3Light';
+    color: #e8e6ea;
+    border: none;
+    font-size: 20px;
+}

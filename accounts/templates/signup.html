@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    {% load staticfiles %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>main</title>
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+</header>
+<body>
+    <form  method="POST" action="{% url 'signup' %}">
+        {% csrf_token %}
+        <br>
+        <strong>이름:</strong>
+        <br>
+        <input name="user_name" type="text">
+        <br>
+        <strong>ID:</strong>
+        <br>
+        <input name="username" type="text" >
+        <br>
+        <strong>Password:</strong>
+        <br>
+        <input name="password1" type="password">
+        <br>
+        <strong>Confirm Password:</strong>
+        <br>
+        <input name="password2" type="password">
+        <br>
+        <strong>Phone number:</strong>
+        <br>
+        <input name="user_hp" type="integer">
+        <br>
+        <strong>한마디:</strong>
+        <br>
+        <input name="user_pr" type="text">
+        <br>
+        <strong>학번:</strong>
+        <br>
+        <input name="user_num" type="integer">
+        <br>
+        <strong>성별:</strong>
+        <br>
+        <input name="user_mw" type="char">
+        <br><br>
+        <input class="btn btn-primary" type="submit" value="sign up">
+    </form>
+</body>

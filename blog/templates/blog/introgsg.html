@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        {% load staticfiles %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>intro</title>
+        <link rel="stylesheet" href="{% static 'css/introstyle_gsg.css' %}">
+    </head>
+
+<top>
+    <div class="container">
+        <div class="container-fluid">
+                <nav class="navbar justify-content-center">
+                    <a class="navbar-brand" href="{% url 'main' %}">POD</a>
+                </nav>
+        </div>
+        <div class="container">
+            <ul class="nav justify-content-between">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'intro' %}">기숙사소개</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'tosurvey' %}">룸메찾기</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'tomypage' %}">마이페이지</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'logout' %}">로그아웃</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+            </ul>
+            <hr>
+</top>
+
+
+<body id="page-top">
+    <div class="container">
+        <div class="card text-center">
+            <br><h2>경북대학교 기숙사 소개</h2><br>
+                <div class="container_map">
+                    <div class="grid-intro">
+                        <div class="list-group">
+                                <button type="button" class="list-group-item list-group-item-action" >긍지관</button>
+                                <a href="{% url 'introssg' %}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">성실관</a>
+                                <a href="{% url 'introgrg' %}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">진리관</a>
+                                <a href="{% url 'introcsg' %}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">첨성관</a>
+                                <a href="{% url 'introhtg' %}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">향토관</a>
+                                <a href="{% url 'introhdg' %}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">협동관</a>
+                                <a href="{% url 'introhmg' %}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">화목관</a>
+                        </div>
+                        <div class="map">
+                            <img src="{% static 'image/map.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="container_exp">
+                        <br><br>긍지관/504 : 학부 남학생 4인실, 경북대 쪽문과 가까움<br><br>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+
+
+</body>
